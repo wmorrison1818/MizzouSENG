@@ -5,6 +5,8 @@ The visualization I, Will Morrison, created was the 2 primary graphs. I added th
 
 We used the following tools:
 -https://jquery.com
+
 -https://www.javascript.com
+
 -http://elections.huffingtonpost.com/pollster/api
 
