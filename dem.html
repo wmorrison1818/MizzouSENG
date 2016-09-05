@@ -7,20 +7,19 @@
     <script src="d3.v3.min.js"></script>
 </head>
 <body>
-    <a href='dem.html'><button>Democratic Primaries</button></a>
-    <div class='first' id="graph"></div>
+    <a href='index.html'><button>Republican Primaries</button></a>
+    <div id="demGraph"></div>
     
     <script>
         
-        var url = "http://elections.huffingtonpost.com/pollster/api/charts/2016-national-gop-primary";
+        var url2 = "http://elections.huffingtonpost.com/pollster/api/charts/2016-national-democratic-primary";
         
-        $.ajax(url, {
+        $.ajax(url2, {
             dataType: "jsonp",
             jsonpCallback: "pollsterCallback",
             cache: true,
             success: function(data) {
-                
-                var candidateBar = d3.select("#graph").selectAll("div").data(data.estimates),
+                var candidateBar = d3.select("#demGraph").selectAll("div").data(data.estimates),
                     candidateWrapper = candidateBar.enter().append("div").classed("group", true);
                 
                 candidateWrapper.append("div")
@@ -32,7 +31,7 @@
                 candidateWrapper.append("div")
                     .classed("bar", true)
                     .transition()
-                    .duration(900)
+                    .duration(1000)
                     .style("width", function(candidate) {
                         return candidate.value * 10 + "px";
                     });

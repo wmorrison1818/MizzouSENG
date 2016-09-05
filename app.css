@@ -1,6 +1,11 @@
 body {
     background-color: #EEE;
 }
+
+.first{
+	background-color:#FFDA64;
+}
+
 #graph .choice {
     float: left;
     font-family: arial;
@@ -12,7 +17,28 @@ body {
 #graph .bar {
     width: 0;
     height: 35px;
-    background-color: coral;
+    background-color: red;
+    margin: 5px;
+    float: left;
+}
+
+.second{
+	background-color: #ACB2B5;
+}
+
+
+#demGraph .choice {
+    float: left;
+    font-family: arial;
+    font-size: 1.5em;
+    min-width: 200px;
+    text-align: right;
+    margin: 8px 5px;
+}
+#demGraph .bar {
+    width: 0;
+    height: 35px;
+    background-color: #132DB5;
     margin: 5px;
     float: left;
 }
