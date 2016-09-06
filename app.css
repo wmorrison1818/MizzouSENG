@@ -42,6 +42,13 @@ body {
     margin: 5px;
     float: left;
 }
+
+.logo {
+  float: left;
+  height: 75px;
+  padding-right: 15px;
+}
+
 .group:after {
   content: "";
   display: table;
