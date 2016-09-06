@@ -7,6 +7,7 @@ The visualizations I, Matt Sommer, added were titles and corresponding party log
 
 The Visualization I, Dewi Kharismawati, organized both pages to make it more neat. I created the header, then put the logos and titles added by Matt into the center of the header. Also, I created container to hold the graphs added by Will to make them look tidier. Use bootstrap on the button to make the visualization even better.
 
+Scott Wolcott insterted a function call to round the percentages to 2 decimal places, which makes the whole thing way prettier. 
 
 We used the following tools:
 
