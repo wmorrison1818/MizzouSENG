@@ -5,10 +5,28 @@
     <link href="app.css" rel="stylesheet" type="text/css">
     <script src="jquery-1.12.0.min.js"></script>
     <script src="d3.v3.min.js"></script>
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"><!-- Optional theme -->
+    
 </head>
 <body>
-    <a href='index.html'><button>Republican Primaries</button></a>
-    <div id="demGraph"></div>
+    
+<div class="header"> <br>
+
+    <center><h1> Democratic Polling Information</h1></center>
+    
+</div><br>
+    
+<div class = "container">
+   <center> <a href="index.html" class="btn btn-danger" role="button">Republican Priminaries</a> <br>
+</center>
+    <!--<a href='index.html'><button>Republican Primaries</button></a>-->
+     <br>
+       
+    <div class= "demBackground" id="demGraph"></div>
     
     <script>
         
@@ -40,5 +58,6 @@
         });
         
     </script>
+</div>
 </body>
 </html>
