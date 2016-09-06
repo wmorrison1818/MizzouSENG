@@ -13,10 +13,16 @@
     
 </head>
 <body>
-    
-<div class="header"> <br>
 
-    <center><h1> Democratic Polling Information</h1></center>
+   
+<div class="header"> <br>
+    <div>
+       <img src="dem.png" class="logo">
+    </div>
+    <div>
+       <h1> Democratic Graph</h1>
+    </div>
+   
     
 </div><br>
     
@@ -28,10 +34,15 @@
        
     <div class= "demBackground" id="demGraph"></div>
     
+
+    
+    <div id="demGraph"></div>
+
+
     <script>
-        
+
         var url2 = "http://elections.huffingtonpost.com/pollster/api/charts/2016-national-democratic-primary";
-        
+
         $.ajax(url2, {
             dataType: "jsonp",
             jsonpCallback: "pollsterCallback",
@@ -39,13 +50,13 @@
             success: function(data) {
                 var candidateBar = d3.select("#demGraph").selectAll("div").data(data.estimates),
                     candidateWrapper = candidateBar.enter().append("div").classed("group", true);
-                
+
                 candidateWrapper.append("div")
                     .classed("choice", true)
                     .text(function(candidate) {
                         return candidate.choice + " " + candidate.value + "%";
                     });
-                
+
                 candidateWrapper.append("div")
                     .classed("bar", true)
                     .transition()
@@ -53,10 +64,10 @@
                     .style("width", function(candidate) {
                         return candidate.value * 10 + "px";
                     });
-                
+
             }
         });
-        
+
     </script>
 </div>
 </body>
