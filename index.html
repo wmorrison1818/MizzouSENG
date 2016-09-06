@@ -48,7 +48,7 @@
                 candidateWrapper.append("div")
                     .classed("choice", true)
                     .text(function(candidate) {
-                        return candidate.choice + " " + candidate.value + "%";
+                        return candidate.choice + " " + parseFloat(candidate.value).toFixed(2) + "%";
                     });
 
                 candidateWrapper.append("div")
